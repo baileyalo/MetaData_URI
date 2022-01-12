@@ -1,0 +1,24 @@
+{
+  "name": "uri",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baileyalo/URI.git"
+  },
+  "author": "ALwayne",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/baileyalo/URI/issues"
+  },
+  "homepage": "https://github.com/baileyalo/URI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
