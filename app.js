@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 8080;        
+var port = process.env.PORT || 3000;        
 var router = express.Router();  
 
 //meta data
@@ -14,11 +14,11 @@ const NFT =   [
         attributes: [
           {
             trait_type: "Breed",
-            value: "Maltipoo"
+            value: "Uchiha"
           },
           {
             trait_type: "Eye color",
-            value: "Mocha"
+            value: "red"
           }
         ],
         description: "The world's greatest Shinobi.",
@@ -26,9 +26,6 @@ const NFT =   [
         name: "Madara"
       }
 ]      
-
-
-
 //routes
 
 router.get('/', function(req, res) {
@@ -39,17 +36,14 @@ router.get('/nft', function(req, res) {
     res.send(NFT);
 });
 
-router.post('/nft', function(req, res) {
-    
+router.post('/nft', function(req, res) {    
     var nft = req.body;
     console.log (req.body);
-
     NFT.push(nft);
-
     res.send('NFT Metadata added');
 });
+
+
 app.use('/api', router);
-
-
 app.listen(port);
 console.log('listening on port ' + port);
