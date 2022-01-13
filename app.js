@@ -1,12 +1,12 @@
-var express    = require('express');        
-var app        = express();               
-var bodyParser = require('body-parser');
+const express    = require('express');        
+const app        = express();               
+const bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-var port = process.env.PORT || 3000;        
-var router = express.Router();  
+const port = process.env.PORT || 3000;        
+const router = express.Router();  
 
 //meta data
 const NFT =   [
@@ -29,10 +29,15 @@ const NFT =   [
 //routes
 
 router.get('/', function(req, res) {
-    res.send('hooray! welcome to our api!' );
+    res.send('Welcome to our api!' );
 });
 router.get('/nft', function(req, res) {
     console.log(NFT);
+    res.send(NFT);
+});
+
+router.get('/img', function(req, res) {
+    //console.log(NFT);
     res.send(NFT);
 });
 
