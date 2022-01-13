@@ -9,24 +9,22 @@ const port = process.env.PORT || 3000;
 const router = express.Router();  
 
 //meta data
-const NFT =  {
-    "title": "Madara Uchihia",
-    "type": "object",
-    "properties": {
-        "name": {
-            "type": "string",
-            "description": "Madara"
-        },
-        "description": {
-            "type": "string",
-            "description": "World greatest shinobi"
-        },
-        "image": {
-            "type": "string",
-            "description": "https://gateway.pinata.cloud/ipfs/Qmcy1NtKnpeduKDFXjLGHnqTa6kN4tzQ8ekUsMVHysf8Qj"
-        }
-    }
-}
+const NFT = {
+    "attributes": [
+      {
+        "trait_type": "Breed",
+        "value": "Maltipoo"
+      },
+      {
+        "trait_type": "Eye color",
+        "value": "Mocha"
+      }
+    ],
+    "description": "The world's greatest Shinobi.",
+    "image": "https://gateway.pinata.cloud/ipfs/Qmcy1NtKnpeduKDFXjLGHnqTa6kN4tzQ8ekUsMVHysf8Qj",
+    "name": "Madara"
+  }
+  ;
 //routes
 app.use(express.static(__dirname+'/api'));
 router.get('/', function(req, res) {
