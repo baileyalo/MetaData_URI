@@ -28,7 +28,7 @@ const NFT = {
 //routes
 app.use(express.static(__dirname+'/api'));
 router.get('/', function(req, res) {
-    res.send('Welcome to our api!' );
+    res.send('Welcome to our Home!' );
 });
 //route to nft meta data
 router.get('/nft', function(req, res) {
