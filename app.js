@@ -32,11 +32,12 @@ app.use(express.static(__dirname+'/api'));
 router.get('/', function(req, res) {
     res.send('Welcome to our api!' );
 });
+//route to nft meta data
 router.get('/nft', function(req, res) {
     console.log(NFT);
     res.send(NFT);
 });
-
+//test post using postman
 router.post('/nft', function(req, res) {    
     var nft = req.body;
     console.log (req.body);
