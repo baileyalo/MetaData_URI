@@ -1,15 +1,18 @@
 {
-    "attributes": [
-      {
-        "trait_type": "Breed",
-        "value": "Maltipoo"
+  "title": "Madara Uchihia",
+  "type": "object",
+  "properties": {
+      "name": {
+          "type": "string",
+          "description": "Madara"
       },
-      {
-        "trait_type": "Eye color",
-        "value": "Mocha"
+      "description": {
+          "type": "string",
+          "description": "World greatest shinobi"
+      },
+      "image": {
+          "type": "string",
+          "description": "https://gateway.pinata.cloud/ipfs/Qmcy1NtKnpeduKDFXjLGHnqTa6kN4tzQ8ekUsMVHysf8Qj"
       }
-    ],
-    "description": "The world's greatest Shinobi.",
-    "image": "https://gateway.pinata.cloud/ipfs/Qmcy1NtKnpeduKDFXjLGHnqTa6kN4tzQ8ekUsMVHysf8Qj",
-    "name": "Madara"
   }
+}
