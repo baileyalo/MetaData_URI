@@ -2,7 +2,7 @@
 
 To run
 
-1. install Dependecies
+1. install Dependencies
 
 2. nodemon app.js
 
